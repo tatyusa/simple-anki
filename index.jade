@@ -1,0 +1,34 @@
+h1.title 暗記テスト
+
+nav.nav-tabs(data-toggle="tabs", data-height="equal")
+  ul
+    li: a.active(href="#tab1") テスト
+    li: a(href="#tab2") 問題
+
+#tab1
+  div.problem 円周率を小数点第二位まで答えよ
+  span.btn-group(style="margin-bottom:10px")
+    input.answer.input-search(type="text", size="30")
+    button.answer.btn.btn-round Answer
+  div.information
+    div.score 正解!!
+    div
+      span 答え: 
+      span.answer 3.14
+    div.explain 円周率π=3.1415926535...
+
+#tab2
+  form.forms
+    label
+      b タイトル
+      input#title(type="text")
+    label
+      b 問題
+      #contents
+
+  button#load.btn 読み込み
+  button#save.btn 書き出し
+
+script(src="js/tabs.js")
+script(src="js/problem.js")
+script(src="js/main.js")

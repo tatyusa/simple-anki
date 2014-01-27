@@ -1,0 +1,26 @@
+doctype
+html
+  head
+    meta(charset="utf-8")
+    title Simple Anki
+
+    // jQuery http://jquery.com/
+    script(type="text/javascript", src="http://code.jquery.com/jquery-latest.js")
+
+    // Kube http://imperavi.com/kube/
+    link(rel="stylesheet", type="text/css", href="css/kube.min.css")
+
+    // jQuery editTable http://codeb.it/edittable/
+    link(rel="stylesheet", type="text/css", href="css/jquery.edittable.min.css")
+    script(type="text/javascript", src="js/jquery.edittable.min.js")
+
+    // FileSaver.js https://github.com/eligrey/FileSaver.js
+    script(type="text/javascript", src="js/FileSaver.js")
+
+    style.
+      body {
+        margin: 10px;
+      }
+
+  body
+    != yield
