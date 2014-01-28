@@ -21,6 +21,18 @@ $ ->
         setScore()
         $(".information").show "fast"
 
+  $("button.next").on "click", (e)->
+    if $('.information').is ":visible"
+      $(".information").hide()
+      setNewProblem()
+
+  $("button.answer").on "click", (e)->
+    if $('.information').not ":visible"
+      setScore()
+      $(".information").show "fast"
+
+
+
   setNewProblem = ->
     contents = problem.getContents()
     index = Math.random()*contents.length|0
